@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ isAuthenticated }) => {
   return (
-    <nav className="bg-gray-800 text-white shadow-lg">
+    <nav className="bg-pink-500 text-white shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo/Brand */}
