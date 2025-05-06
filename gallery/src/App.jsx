@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import HomePage from './pages/HomePage'
 // import Home from './pages/Home'
-// import CouplesGallery from './pages/CouplesGallery'
+import CouplesGallery from './pages/CouplesGallery'
 // import SoloGallery from './pages/SoloGallery'
 // import Upload from './pages/Upload'
 // import Login from './pages/Login'
@@ -18,16 +19,16 @@ function App() {
       
       <div className="container mx-auto px-4 py-8">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/couples" element={<CouplesGallery />} />
-          <Route path="/solo" element={<SoloGallery />} />
+          {/* <Route path="/solo" element={<SoloGallery />} /> */}
           {/* Protected route - only accessible when authenticated */}
-          <Route 
+          {/* <Route 
             path="/upload" 
             element={isAuthenticated ? <Upload /> : <Login setIsAuthenticated={setIsAuthenticated} />} 
-          />
-          <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
-          <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} />
+          /> */}
+          {/* <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} /> */}
+          {/* <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} /> */}
         </Routes>
       </div>
     </Router>
