@@ -16,10 +16,10 @@ const Navbar = ({ isAuthenticated }) => {
               Home
             </Link>
             <Link to="/couples" className="hover:text-gray-300 transition duration-300">
-              Couples Gallery
+            Us ❤️
             </Link>
             <Link to="/solo" className="hover:text-gray-300 transition duration-300">
-              Solo Gallery
+            Only You ❤️
             </Link>
             
             {/* Conditionally render Upload link based on authentication */}
