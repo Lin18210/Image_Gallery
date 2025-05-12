@@ -11,35 +11,35 @@ const Navbar = ({ isAuthenticated }) => {
           </Link>
           
           {/* Navigation Links */}
-          <div className="flex space-x-6">
-            <Link to="/" className="hover:text-gray-300 transition duration-300">
+          <div className="flex space-x-10">
+            <Link to="/" className="hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
               Home
             </Link>
-            <Link to="/couples" className="hover:text-gray-300 transition duration-300">
+            <Link to="/couples" className="hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
             Us ❤️
             </Link>
-            <Link to="/solo" className="hover:text-gray-300 transition duration-300">
+            <Link to="/solo" className="hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
             Only You ❤️
             </Link>
             
             {/* Conditionally render Upload link based on authentication */}
             {isAuthenticated && (
-              <Link to="/upload" className="hover:text-gray-300 transition duration-300">
+              <Link to="/upload" className="hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
                 Upload Photo
               </Link>
             )}
             
             {/* Authentication Links */}
             {isAuthenticated ? (
-              <button className="hover:text-gray-300 transition duration-300">
+              <button className="hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
                 Logout
               </button>
             ) : (
               <div className="flex space-x-4">
-                <Link to="/login" className="hover:text-gray-300 transition duration-300">
+                <Link to="/login" className="hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
                   Login
                 </Link>
-                <Link to="/register" className="hover:text-gray-300 transition duration-300">
+                <Link to="/register" className="hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
                   Register
                 </Link>
               </div>
