@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 // import Home from './pages/Home'
 import CouplesGallery from './pages/CouplesGallery'
-// import SoloGallery from './pages/SoloGallery'
+import SoloGallery from './pages/SoloGallery'
 // import Upload from './pages/Upload'
 // import Login from './pages/Login'
 // import Register from './pages/Register'
@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/couples" element={<CouplesGallery />} />
-          {/* <Route path="/solo" element={<SoloGallery />} /> */}
+          <Route path="/solo" element={<SoloGallery />} />
           {/* Protected route - only accessible when authenticated */}
           {/* <Route 
             path="/upload" 
