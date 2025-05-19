@@ -3,7 +3,7 @@ const HomePage = () => {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold font-serif mb-6 text-center">Welcome to Our Image Gallery</h1>
       <p className="mb-4 text-center text-gray-600">
-        Browse beautiful photos in our collections. One is for Two of Us and one is for her only❤️.
+        Browse beautiful photos in our collections❤️
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         <div className="flex flex-col items-center bg-white p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105 cursor-pointer">

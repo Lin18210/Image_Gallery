@@ -12,13 +12,13 @@ const Navbar = ({ isAuthenticated }) => {
           
           {/* Navigation Links */}
           <div className="flex space-x-10">
-            <Link to="/" className="text-xl hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
+            <Link to="/" className="text-xl font-serif hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
               Home
             </Link>
-            <Link to="/couples" className="text-xl hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
+            <Link to="/couples" className="text-xl font-serif hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
             Us ❤️
             </Link>
-            <Link to="/solo" className="text-xl hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
+            <Link to="/solo" className="text-xl font-serif hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
             Only You ❤️
             </Link>
             
