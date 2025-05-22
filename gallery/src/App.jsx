@@ -5,8 +5,8 @@ import HomePage from './pages/HomePage'
 // import Home from './pages/Home'
 import CouplesGallery from './pages/CouplesGallery'
 import SoloGallery from './pages/SoloGallery'
-// import Upload from './pages/Upload'
-// import Login from './pages/Login'
+import Upload from './pages/UploadPage'
+import Login from './pages/Login'
 // import Register from './pages/Register'
 
 function App() {
@@ -23,11 +23,11 @@ function App() {
           <Route path="/couples" element={<CouplesGallery />} />
           <Route path="/solo" element={<SoloGallery />} />
           {/* Protected route - only accessible when authenticated */}
-          {/* <Route 
+          <Route 
             path="/upload" 
             element={isAuthenticated ? <Upload /> : <Login setIsAuthenticated={setIsAuthenticated} />} 
-          /> */}
-          {/* <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} /> */}
+          />
+          <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
           {/* <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} /> */}
         </Routes>
       </div>
