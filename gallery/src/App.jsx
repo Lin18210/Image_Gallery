@@ -7,7 +7,7 @@ import CouplesGallery from './pages/CouplesGallery'
 import SoloGallery from './pages/SoloGallery'
 import Upload from './pages/UploadPage'
 import Login from './pages/Login'
-// import Register from './pages/Register'
+import Register from './pages/Register'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -28,7 +28,7 @@ function App() {
             element={isAuthenticated ? <Upload /> : <Login setIsAuthenticated={setIsAuthenticated} />} 
           />
           <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
-          {/* <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} /> */}
+          <Route path="/register" element={<Register setIsAuthenticated={setIsAuthenticated} />} />
         </Routes>
       </div>
     </Router>
