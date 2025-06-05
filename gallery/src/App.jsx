@@ -10,7 +10,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(true)
 
   return (
     <Router>
