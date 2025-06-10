@@ -12,34 +12,34 @@ const Navbar = ({ isAuthenticated }) => {
           
           {/* Navigation Links */}
           <div className="flex space-x-10">
-            <Link to="/" className="text-xl font-serif hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
+            <Link to="/" className="text-xl font-serif hover:text-pink-600 hover:scale-125 hover:underline transition-delay duration-400">
               Home
             </Link>
-            <Link to="/couples" className="text-xl font-serif hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
+            <Link to="/couples" className="text-xl font-serif hover:text-pink-600 hover:scale-125 hover:underline transition-transform duration-400">
             Us ❤️
             </Link>
-            <Link to="/solo" className="text-xl font-serif hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
+            <Link to="/solo" className="text-xl font-serif hover:text-pink-600 hover:scale-125 hover:underline transition-transform duration-400">
             Only You ❤️
             </Link>
             
             {/* Conditionally render Upload link based on authentication */}
             {isAuthenticated && (
-              <Link to="/upload" className="text-xl hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
+              <Link to="/upload" className="text-xl hover:text-pink-600 hover:scale-125 hover:underline transition-transform duration-400">
                 Upload Photo
               </Link>
             )}
             
             {/* Authentication Links */}
             {isAuthenticated ? (
-              <button className="text-xl hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
-                Logout
+              <button className="text-xl hover:text-pink-600 hover:scale-125 hover:underline transition-transform duration-400">
+              Logout
               </button>
             ) : (
               <div className="flex space-x-4">
-                <Link to="/login" className="text-xl hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
+                <Link to="/login" className="text-xl hover:text-pink-600 hover:scale-125 hover:underline transition-transform duration-400">
                   Login
                 </Link>
-                <Link to="/register" className="text-xl hover:text-gray-300 hover:scale-125 hover:underline transition-transform duration-400">
+                <Link to="/register" className="text-xl hover:text-pink-600 hover:scale-125 hover:underline transition-transform duration-400">
                   Register
                 </Link>
               </div>
