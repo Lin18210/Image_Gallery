@@ -2,7 +2,7 @@ const HomePage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold font-serif mb-6 text-center">Welcome to Our Image Gallery</h1>
-      <p className="mb-4 text-center text-gray-600">
+      <p className="mb-4 text-center font-mono text-gray-600">
         Browse beautiful photos in our collections❤️
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
